@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fahi Rent</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Fahi Rent</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#properties">Properties</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+        <section class="featured-properties">
+            <h2>Featured Properties</h2>
+            <div class="property-grid">
+                <div class="property-card">
+                  <!-- Add this after your property cards but before </main> -->
+              <div id="propertyModal" class="modal">
+                  <div class="modal-content">
+                      <span class="close">&times;</span>
+                      <div id="modalContent"></div>
+                  </div>
+              </div>
+                    <img src="placeholder.jpg" alt="Property 1" style="width: 100%; height: 200px; object-fit: cover;">
+                    <h3>Modern Apartment</h3>
+                    <p>2 Bedrooms • 1 Bathroom</p>
+                    <p>$1,200/month</p>
+                    <button>View Details</button>
+                </div>
+                
+
+                <div class="property-card">
+                    <img src="placeholder.jpg" alt="Property 2" style="width: 100%; height: 200px; object-fit: cover;">
+                    <h3>Cozy Studio</h3>
+                    <p>1 Bedroom • 1 Bathroom</p>
+                    <p>$800/month</p>
+                    <button>View Details</button>
+                </div>
+
+                <div class="property-card">
+                    <img src="placeholder.jpg" alt="Property 3" style="width: 100%; height: 200px; object-fit: cover;">
+                    <h3>Family House</h3>
+                    <p>3 Bedrooms • 2 Bathrooms</p>
+                    <p>$2,000/month</p>
+                    <button>View Details</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="search-filters" style="padding: 2rem;">
+            <h2>Find Your Perfect Rental</h2>
+            <form>
+                <input type="text" placeholder="Location">
+                <select>
+                    <option>Property Type</option>
+                    <option>Apartment</option>
+                    <option>House</option>
+                    <option>Studio</option>
+                </select>
+                <input type="number" placeholder="Max Price">
+                <button type="submit">Search</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Fahi Rent. All rights reserved.</p>
+        <div>
+            <a href="#terms">Terms of Service</a> |
+            <a href="#privacy">Privacy Policy</a> |
+            <a href="#contact">Contact Us</a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
