@@ -79,3 +79,12 @@ window.onclick = function(event) {
         modal.style.display = 'none';
     }
 }
+function sidebarOpen(){
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.style.display='flex';
+    
+}
+function sidebarClose(){
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.style.display='none';
+}
